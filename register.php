@@ -1,5 +1,5 @@
 <?php
-include("php/query.php");
+include("query.php");
 ?>
 <!doctype html>
 <html lang="en">
@@ -13,31 +13,47 @@ include("php/query.php");
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
   <body>
+
       
-   <div class="container p-5">
-    <form action="" method="post">
-        <div class="form-group">
-          <label for="">Name</label>
-          <input type="text" name="uName" value="<?php echo $userName?>" id="" class="form-control" placeholder="" aria-describedby="helpId">
-          <small id="helpId" class="text-danger"><?php echo $userNameErr?></small>
-        </div>
-        <div class="form-group">
-          <label for="">Email</label>
-          <input type="text" name="uEmail" value="<?php echo $userEmail?>" id="" class="form-control" placeholder="" aria-describedby="helpId">
-          <small id="helpId" class="text-danger"><?php echo $userEmailErr?></small>
-        </div>
-        <div class="form-group">
-          <label for="">Password</label>
-          <input type="text" name="uPassword" value="<?php echo $userPassword?>" id="" class="form-control" placeholder="" aria-describedby="helpId">
-          <small id="helpId" class="text-danger"><?php echo $userPasswordErr?></small>
-        </div>
-        <div class="form-group">
-          <label for="">Confirm Password</label>
-          <input type="text" name="uConfirmPassword" value="<?php echo $userConfirmPassword?>" id="" class="form-control" placeholder="" aria-describedby="helpId">
-          <small id="helpId" class="text-danger"><?php echo $userConfirmPasswordErr?></small>
-        </div>
-        <button name="registerUser" class="btn btn-info">Register</button>
-    </form>
-   </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<div class="container p-5">
+<form action="" method="post">
+<div class="container p-5">
+      <div class="form-group">
+        <label for="">Name</label>
+        <input type="text" name="" id="" class="form-control" placeholder="" aria-describedby="helpId">
+        <small id="helpId" class="text-muted"></small>
+      </div>
+    </div>
+
+    <div class="form-group">
+        <label for="">Email</label>
+        <input type="text" name="" valueid="" class="form-control" placeholder="" aria-describedby="helpId">
+        <small id="helpId" class="text-muted"></small>
+      </div>
+    </div>
+
+    <div class="form-group">
+        <label for="">Password</label>
+        <input type="text" name="" id="" class="form-control" placeholder="" aria-describedby="helpId">
+        <small id="helpId" class="text-muted"></small>
+      </div>
+    </div>
+
+    <div class="form-group">
+        <label for="">Confirm Password</label>
+        <input type="text" name="" id="" class="form-control" placeholder="" aria-describedby="helpId">
+        <small id="helpId" class="text-muted"></small>
+      </div>
+    </div>
+    <button name="registeruser" class="btn btn-info">Register</button>
+</form>
+
+</div>
   </body>
 </html>
