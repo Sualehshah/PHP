@@ -1,11 +1,16 @@
 <?php
-	if (!empty($_SERVER['HTTPS']) && ('on' == $_SERVER['HTTPS'])) {
-		$uri = 'https://';
-	} else {
-		$uri = 'http://';
-	}
-	$uri .= $_SERVER['HTTP_HOST'];
-	header('Location: '.$uri.'/dashboard/');
-	exit;
+include("php/query.php");
 ?>
-Something is wrong with the XAMPP installation :-(
+<h1>Hello this is web page</h1>
+<?php
+if(isset($_SESSION['userEmail'])){
+        ?>
+                <h1><?php echo $_SESSION['userName'] . " " . $_SESSION['userEmail'] ?></h1>
+                <a href="logout.php">Logout</a>
+        <?php
+}else{
+        ?>
+                        <a href="login.php">login</a>
+        <?php
+}
+?>
